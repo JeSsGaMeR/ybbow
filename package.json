@@ -1,0 +1,66 @@
+{
+  "name": "whats-alipay",
+  "version": "0.1.5",
+  "description": "Yet Another Alipay OpenAPI SDK",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext \".js\" index.js bin lib tests",
+    "test": "mocha --check-leaks ./tests/*.test.js ./tests/**/*.test.js"
+  },
+  "engines": {
+    "node": ">=10.15"
+  },
+  "files": [
+    "index.js",
+    "bin/",
+    "lib/",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "whatsCli": "./bin/cli.js",
+    "certHelper": "./bin/cert.js"
+  },
+  "directories": {
+    "bin": "./bin",
+    "lib": "./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNorthMemory/whats-alipay.git"
+  },
+  "keywords": [
+    "alipay",
+    "alipay-openapi",
+    "locale-date-time",
+    "json-like-parser",
+    "rsa-sha256",
+    "rsa-sha1",
+    "aes-cbc"
+  ],
+  "author": "James ZHANG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheNorthMemory/whats-alipay/issues"
+  },
+  "homepage": "https://github.com/TheNorthMemory/whats-alipay#readme",
+  "dependencies": {
+    "axios": "^0.21.2"
+  },
+  "peerDependencies": {
+    "@fidm/x509": "^1.2.1",
+    "yargs": "^17.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "^7.14.7",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-mocha": "^9.0.0",
+    "mocha": "^9.0.1",
+    "nock": "^13.1.0",
+    "should": "^13.2.3"
+  }
+}
